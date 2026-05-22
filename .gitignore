@@ -1,0 +1,26 @@
+# Working folders (not part of site)
+Detail Auto/
+FINA export Files/
+image/
+docs/
+База Знаний archive/
+.claude/
+
+# Source files for other sites
+detail-auto.html
+
+# Temp & system
+*.docx
+*.xlsx
+*.gsheet
+*.gdoc
+*.pdf
+*.eps
+*.png
+*.jpg
+desktop.ini
+.DS_Store
+Thumbs.db
+parse_products*.js
+serve.js
+test.md
