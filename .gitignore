@@ -6,6 +6,9 @@ docs/
 База Знаний archive/
 .claude/
 
+# Source files for other sites
+detail-auto.html
+
 # Temp & system
 *.docx
 *.xlsx
