@@ -180,7 +180,7 @@
     .about-text p { color: var(--text-muted); margin-bottom: 1rem; font-size: 1.02rem; }
 
     .about-stats {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem; margin-top: 2rem;
     }
     .stat-item { text-align: center; padding: 1.5rem; background: var(--bg-card); border-radius: var(--radius); box-shadow: var(--shadow); }
@@ -394,13 +394,13 @@
       .hamburger { display: flex; }
 
       .about-grid, .directions-grid, .contacts-grid { grid-template-columns: 1fr; }
-      .about-stats { grid-template-columns: 1fr 1fr; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); }
       .team-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
       section { padding: 64px 5%; }
     }
 
     @media (max-width: 480px) {
-      .about-stats { grid-template-columns: 1fr; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
       .hero-cta { flex-direction: column; align-items: center; }
     }
   </style>
@@ -443,9 +443,9 @@
     <div class="about-text fade-in">
       <div class="section-tag">კომპანიის შესახებ</div>
       <h2>B2B დისტრიბუტორი ბათუმის ბაზარზე</h2>
-      <p>BBS — Batumi Business Solutions არის ООО ბიკო-ს სავაჭრო მარკა, დაარსებული 2019 წელს (ბიზნესი 2010 წლიდან). ჩვენ ვართ B2B დისტრიბუტორი, რომელიც ემსახურება ბიზნეს პარტნიორებს აჭარის რეგიონში.</p>
+      <p>BBS — Batumi Business Solutions არის შპს ბიკო-ს სავაჭრო მარკა, დაარსებული 2019 წელს (ბიზნესი 2010 წლიდან). ჩვენ ვართ B2B დისტრიბუტორი, რომელიც ემსახურება ბიზნეს პარტნიორებს აჭარის რეგიონში.</p>
       <p>ჩვენი ფოკუსი — გრძელვადიანი პარტნიორული ურთიერთობები, მიწოდების საიმედოობა, ტექნიკური მხარდაჭერა და ინდივიდუალური მიდგომა თითოეული კლიენტის მიმართ.</p>
-      <p>ვემსახურებით HoReCa სეგმენტს, საკონდიტრო საწარმოებს, ავტო-დეტეილინგ ცენტრებს და სხვა ბიზნეს კლიენტებს.</p>
+      <p>ვემსახურებით HoReCa სეგმენტს, საკონდიტრო სექტორს, ყავის ბიზნესსა და ავტო-დეტეილინგ ცენტრებს.</p>
       <div class="about-stats">
         <div class="stat-item">
           <div class="stat-num">15+</div>
@@ -458,10 +458,6 @@
         <div class="stat-item">
           <div class="stat-num">4</div>
           <div class="stat-label">ბიზნეს მიმართულება</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">18</div>
-          <div class="stat-label">გუნდის წევრი</div>
         </div>
       </div>
     </div>
