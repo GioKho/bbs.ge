@@ -333,32 +333,31 @@
     .contact-item-value a:hover { color: var(--accent); }
 
     .map-card {
-      background: linear-gradient(135deg, #EFF6FF, #F0FDF4);
-      border-radius: 20px; padding: 2rem;
-      display: flex; flex-direction: column; justify-content: space-between;
-      min-height: 260px; position: relative; overflow: hidden;
+      border-radius: 20px; overflow: hidden;
       border: 1.5px solid var(--border);
+      display: flex; flex-direction: column;
+      min-height: 320px;
     }
-    .map-card::before {
-      content: '';
-      position: absolute; bottom: -40px; right: -40px;
-      width: 200px; height: 200px; border-radius: 50%;
-      background: rgba(37,99,235,.08);
+    .map-iframe {
+      width: 100%; flex: 1; min-height: 220px;
+      border: none; display: block;
     }
-
-    .map-card h3 { font-size: 1.15rem; font-weight: 700; position: relative; z-index: 1; }
+    .map-footer {
+      padding: 1.25rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+      background: var(--bg-card); border-top: 1px solid var(--border);
+    }
     .map-address {
-      font-size: 1.05rem; font-weight: 600;
-      color: var(--text); margin: 1rem 0;
-      position: relative; z-index: 1;
+      font-size: .95rem; font-weight: 600; color: var(--text);
     }
-    .map-address span { display: block; font-size: .85rem; color: var(--text-muted); font-weight: 400; margin-top: .2rem; }
+    .map-address span { display: block; font-size: .82rem; color: var(--text-muted); font-weight: 400; margin-top: .15rem; }
     .map-link {
       display: inline-flex; align-items: center; gap: .5rem;
       background: var(--accent); color: #fff;
-      font-size: .88rem; font-weight: 600; padding: 10px 18px;
+      font-size: .85rem; font-weight: 600; padding: 9px 16px;
       border-radius: 8px; text-decoration: none;
-      transition: all .2s; position: relative; z-index: 1; width: fit-content;
+      transition: all .2s; white-space: nowrap;
     }
     .map-link:hover { background: var(--accent-hover); transform: translateY(-1px); }
 
@@ -706,10 +705,17 @@
           </div>
         </li>
         <li class="contact-item">
-          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-icon" style="background:var(--grass-light);color:var(--grass);">📍</div>
           <div class="contact-item-text">
-            <span class="contact-item-label">მისამართი</span>
-            <span class="contact-item-value">ჭავჭავაძის ქ. 58/60, ბათუმი, აჭარა</span>
+            <span class="contact-item-label">მისამართი — Grass / ოფისი / AutoDetail</span>
+            <span class="contact-item-value">ჭავჭავაძის ქ. 64, II სართული, ბათუმი</span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-item-icon" style="background:var(--konditer-light);color:var(--konditer);">📍</div>
+          <div class="contact-item-text">
+            <span class="contact-item-label">მისამართი — Konditer / Coffee</span>
+            <span class="contact-item-value">ჭავჭავაძის ქ. 58, ბათუმი</span>
           </div>
         </li>
       </ul>
@@ -720,32 +726,47 @@
           <tr>
             <td>Grass Batumi</td>
             <td>ორშ – პარ</td>
+            <td>10:00 – 19:00</td>
+          </tr>
+          <tr>
+            <td>Grass Batumi</td>
+            <td>შაბათი</td>
             <td>10:00 – 18:00</td>
           </tr>
           <tr>
             <td>Konditer</td>
             <td>ორშ – შაბ</td>
-            <td>10:00 – 18:00</td>
+            <td>10:00 – 19:00</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="color:var(--text-muted);">კვირა</td>
+            <td style="color:var(--text-muted);">დასვენება</td>
           </tr>
         </table>
       </div>
     </div>
 
     <div class="map-card fade-in">
-      <div>
-        <h3>მდებარეობა</h3>
+      <iframe
+        src="https://maps.google.com/maps?q=Chavchavadze+64,+Batumi,+Georgia&output=embed&hl=ka"
+        class="map-iframe"
+        loading="lazy"
+        title="BBS — ჭავჭავაძის ქ. 58/60, ბათუმი"
+        allowfullscreen
+      ></iframe>
+      <div class="map-footer">
         <div class="map-address">
-          ჭავჭავაძის ქ. 58/60
-          <span>ბათუმი, აჭარა, საქართველო</span>
+          ჭავჭავაძის ქ. 64, II სართული
+          <span>ბათუმი, აჭარა, საქართველო — Grass / ოფისი</span>
         </div>
+        <a
+          href="https://www.google.com/maps/search/Chavchavadze+64+Batumi"
+          target="_blank"
+          class="map-link"
+        >
+          🗺 Google Maps-ზე ნახვა
+        </a>
       </div>
-      <a
-        href="https://www.google.com/maps/search/ჭავჭავაძის+58+ბათუმი"
-        target="_blank"
-        class="map-link"
-      >
-        🗺 Google Maps-ზე ნახვა
-      </a>
     </div>
 
   </div>
@@ -756,7 +777,7 @@
   <div class="footer-inner">
     <div class="footer-logo">B<span>B</span>S</div>
     <p>© 2026 შპს ბიკო · BBS — Batumi Business Solutions</p>
-    <p>ჭავჭავაძის ქ. 58/60, ბათუმი</p>
+    <p>ჭავჭავაძის ქ. 64 · ბათუმი, საქართველო</p>
   </div>
 </footer>
 
