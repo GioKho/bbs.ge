@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BBS — Batumi Business Solutions</title>
+  <meta name="description" content="BBS — Batumi Business Solutions. B2B დისტრიბუტორი ბათუმში: Grass HoReCa ქიმია, Konditer.ge საკონდიტრო, Coffee & Accessories, AutoDetail. შპს ბიკო.">
+  <meta property="og:title" content="BBS — Batumi Business Solutions">
+  <meta property="og:description" content="4 მიმართულება. ერთი სანდო B2B პარტნიორი ბათუმში.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbs.ge">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232563EB'/><text x='16' y='22' font-family='Arial,sans-serif' font-size='13' font-weight='900' fill='white' text-anchor='middle'>BBS</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -22,6 +28,10 @@
       --grass-light: #F0FDF4;
       --konditer: #D97706;
       --konditer-light: #FFFBEB;
+      --autodetail: #1E3A5F;
+      --autodetail-light: #EFF6FF;
+      --coffee: #6B3F2A;
+      --coffee-light: #FDF5EF;
       --radius: 12px;
       --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
       --shadow-hover: 0 4px 8px rgba(0,0,0,.1), 0 12px 32px rgba(0,0,0,.1);
@@ -111,8 +121,12 @@
 
     .hero p {
       font-size: 1.1rem; color: var(--text-muted);
-      max-width: 520px; margin: 0 auto 2.5rem;
-      font-weight: 400;
+      max-width: 520px; margin: 0 auto .75rem;
+      font-weight: 500;
+    }
+    .hero .hero-sub {
+      font-size: .9rem; font-weight: 400;
+      max-width: 480px; margin-bottom: 2.5rem;
     }
 
     .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
@@ -245,6 +259,12 @@
     .dir-link.grass:hover { background: var(--grass); color: #fff; }
     .dir-link.konditer { background: var(--konditer-light); color: var(--konditer); }
     .dir-link.konditer:hover { background: var(--konditer); color: #fff; }
+    .dir-badge.autodetail { background: var(--autodetail-light); color: var(--autodetail); }
+    .dir-badge.coffee { background: var(--coffee-light); color: var(--coffee); }
+    .dir-link.autodetail { background: var(--autodetail-light); color: var(--autodetail); }
+    .dir-link.autodetail:hover { background: var(--autodetail); color: #fff; }
+    .dir-link.coffee { background: var(--coffee-light); color: var(--coffee); }
+    .dir-link.coffee:hover { background: var(--coffee); color: #fff; }
 
     /* ─── TEAM ─── */
     #team { background: var(--bg-soft); }
@@ -407,7 +427,8 @@
     <h1>
       <span class="brand">BBS</span> —<br>Batumi Business<br>Solutions
     </h1>
-    <p>B2B დისტრიბუცია, პარტნიორული ურთიერთობები და პროფესიული პროდუქტები ბიზნესისთვის აჭარის რეგიონში</p>
+    <p>4 მიმართულება. ერთი სანდო B2B პარტნიორი ბათუმში.</p>
+    <p class="hero-sub">პროფესიული ქიმია, საკონდიტრო პროდუქტები, ყავა და ავტო-ქიმია ბიზნესისთვის.</p>
     <div class="hero-cta">
       <a href="#directions" class="btn btn-primary">→ მიმართულებები</a>
       <a href="#contacts" class="btn btn-outline">კონტაქტი</a>
@@ -434,7 +455,7 @@
           <div class="stat-label">აქტიური კლიენტი</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">2</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">ბიზნეს მიმართულება</div>
         </div>
         <div class="stat-item">
@@ -448,7 +469,7 @@
         <div class="info-icon">🏢</div>
         <div class="info-row-text">
           <span class="info-row-label">იურიდიული სახელი</span>
-          <span class="info-row-value">ООО ბიკო</span>
+          <span class="info-row-value">შპს ბიკო</span>
         </div>
       </div>
       <div class="info-row">
@@ -488,7 +509,7 @@
   <div class="section-header fade-in">
     <div class="section-tag">მიმართულებები</div>
     <h2>ჩვენი ბიზნეს მიმართულებები</h2>
-    <p>BBS მოიცავს ორ ძირითად მიმართულებას, თითოეული — ცალკე ბრენდი, ვებგვერდი და გუნდი</p>
+    <p>BBS მოიცავს 4 ძირითად მიმართულებას, თითოეული — ცალკე ბრენდი, ვებგვერდი და გუნდი</p>
   </div>
   <div class="directions-grid container">
     <!-- Grass -->
@@ -497,14 +518,14 @@
       <div class="dir-icon">🧴</div>
       <h3>Grass Batumi</h3>
       <div class="dir-url">🌐 grassbatumi.ge</div>
-      <p>GRASS-ის ოფიციალური დისტრიბუტორი ბათუმის რეგიონში. პროფესიული ქიმია HoReCa სექტორისთვის — სასტუმროები, რესტორნები, კაფეები, ავტო-დეტეილინგ ცენტრები. B2B გაყიდვები, ტრენინგი და ტექნიკური მხარდაჭერა.</p>
+      <p>GRASS-ის ოფიციალური დისტრიბუტორი ბათუმის რეგიონში. პროფესიული ქიმია HoReCa სექტორისთვის — სასტუმროები, რესტორნები, კაფეები, კლინინგ კომპანიები, Housekeeping. B2B გაყიდვები, ტრენინგი და ტექნიკური მხარდაჭერა.</p>
       <div class="dir-tags">
         <span class="dir-tag">პროფ. ქიმია</span>
         <span class="dir-tag">დეზინფექცია</span>
         <span class="dir-tag">HoReCa</span>
-        <span class="dir-tag">ავტო-დეტეილინგი</span>
+        <span class="dir-tag">კლინინგი</span>
         <span class="dir-tag">სასტუმრო</span>
-        <span class="dir-tag">სარეცხი</span>
+        <span class="dir-tag">Housekeeping</span>
       </div>
       <a href="https://grassbatumi.ge" target="_blank" class="dir-link grass">→ grassbatumi.ge</a>
     </div>
@@ -524,6 +545,40 @@
         <span class="dir-tag">HoReCa</span>
       </div>
       <a href="https://konditer.ge" target="_blank" class="dir-link konditer">→ konditer.ge</a>
+    </div>
+    <!-- AutoDetail -->
+    <div class="dir-card fade-in">
+      <div class="dir-badge autodetail">● AutoDetail</div>
+      <div class="dir-icon">🚗</div>
+      <h3>AutoDetail</h3>
+      <div class="dir-url">🌐 autodetail.ge</div>
+      <p>პროფესიული ავტო-ქიმია და დეტეილინგ-პროდუქტები. ლაქ-საღებავის დაცვა, პოლიში, ცვილი, ინტერიერის მოვლა — B2B მიწოდება დეტეილინგ ცენტრებზე და ავტოსერვისებზე.</p>
+      <div class="dir-tags">
+        <span class="dir-tag">ავტო-ქიმია</span>
+        <span class="dir-tag">პოლიში</span>
+        <span class="dir-tag">ცვილი</span>
+        <span class="dir-tag">დეტეილინგი</span>
+        <span class="dir-tag">ლაქის დაცვა</span>
+        <span class="dir-tag">B2B</span>
+      </div>
+      <a href="https://autodetail.ge" target="_blank" class="dir-link autodetail">→ autodetail.ge</a>
+    </div>
+    <!-- Coffee & Accessories -->
+    <div class="dir-card fade-in">
+      <div class="dir-badge coffee">● Coffee</div>
+      <div class="dir-icon">☕</div>
+      <h3>Coffee & Accessories</h3>
+      <div class="dir-url">🌐 konditer.ge</div>
+      <p>Mondo და Illy — ოფიციალური წარმომადგენლები აჭარაში. ყავა, ჩაი და HoReCa ინვენტარი — რესტორნებისთვის, კაფეებისთვის, სასტუმროებისთვის.</p>
+      <div class="dir-tags">
+        <span class="dir-tag">ყავა</span>
+        <span class="dir-tag">Mondo</span>
+        <span class="dir-tag">Illy</span>
+        <span class="dir-tag">HoReCa</span>
+        <span class="dir-tag">ჩაი</span>
+        <span class="dir-tag">ინვენტარი</span>
+      </div>
+      <a href="https://konditer.ge" target="_blank" class="dir-link coffee">→ konditer.ge</a>
     </div>
   </div>
 </section>
@@ -703,7 +758,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">B<span>B</span>S</div>
-    <p>© 2026 ООО ბიკო · BBS — Batumi Business Solutions</p>
+    <p>© 2026 შპს ბიკო · BBS — Batumi Business Solutions</p>
     <p>ჭავჭავაძის ქ. 58/60, ბათუმი</p>
   </div>
 </footer>
